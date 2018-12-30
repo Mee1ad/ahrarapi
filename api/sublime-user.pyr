@@ -1,0 +1,46 @@
+###env
+# url = 'https://gcorp-api.ir/ahrar'
+url = '192.168.1.95/ahrar'
+version = '/v1'
+accessToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUyNjY2YjM5OTE2MDEwYTJiMzg1OTY3NzU4ODFiYWE4ZTFiNDhiYzcxZjNhNmUzMzlmMzQ5OTRiZTgzNzhkOTgwOWI2MDBmM2E4MGE2ZjE4In0.eyJhdWQiOiIzIiwianRpIjoiNTI2NjZiMzk5MTYwMTBhMmIzODU5Njc3NTg4MWJhYThlMWI0OGJjNzFmM2E2ZTMzOWYzNDk5NGJlODM3OGQ5ODA5YjYwMGYzYTgwYTZmMTgiLCJpYXQiOjE1NDU4MTg2OTgsIm5iZiI6MTU0NTgxODY5OCwiZXhwIjoxNTc3MzU0Njk4LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.aamSBg46de4aaXEzWFLslTdvLH8ghd6ucn0fJYve4DsRZDC691zqGsMgMKkB4yWAMsTfSzdKZuMFDFtNWlKaiZbkKhqC2fHkVhCS4AymlnU-nQHS31ucoDg4OTIdZBWfudHsOTbJZHB4FXo673MvzyNw2xcBXd64cisNqAk4dGwVhOonEGFNt0nQ-Ubj89DEnKN-EM4XzPeB0nQ5vDb74tq4HXaeUBFPwoO7kgByxkG4n7AydnvX8zvhGUEeGhxKYrKrzNejNw0JqkQ3gC2b9cTggggxL_wdskDiB9idhuNIx4zZnbqu_zRrdlboSFhXcSQf3EjnfBFCm_bFwMsVEs4Sj69qwzdJ55zBKo6Xv_0klk8x9Mem5_0inlUepBm6Q56QWpq7vFnZ5h_tOWjKNNuGtYD4mBkiC7IksQ9wv9fFUoEXZ8-ytaglUsCig1B4mMcdWF1uEE5qSjHT6Fi2sXXpuX6pzymFFcNe_MSat0Cds7_ifWiIMVp6_yHizEht75rS6dinAowVx95dGx9pTvLrevwW5JkMN3TrkFy4KJ_0bdAN36KyE64ukrvbI5sonLmBGihFci6iZEZoBZ0qmDt6tK1tnav6DdSJ7EE2r7s3xeiUlHp0mrcdH5GxSmVmJ6XG_oTO_mNW3crBC27HYLNWCv-bF04rQf0Wx1tLKVU'
+adminToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjJmMTBhM2EzNDVkZjNjNzA2OGEwYzY4NjdjNmUzMDcxYzhiZWE5NzQzMDExZDJiMjA3MmFlMDU4ODhjMjU3NzE5NGYxMDg5ZTMzNzc4Yzc5In0.eyJhdWQiOiIxIiwianRpIjoiMmYxMGEzYTM0NWRmM2M3MDY4YTBjNjg2N2M2ZTMwNzFjOGJlYTk3NDMwMTFkMmIyMDcyYWUwNTg4OGMyNTc3MTk0ZjEwODllMzM3NzhjNzkiLCJpYXQiOjE1NDU4MTQ0NTksIm5iZiI6MTU0NTgxNDQ1OSwiZXhwIjoxNTc3MzUwNDU5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.TOq2UXxwwFoQnAVcVmKYtkQrE3-IdcAkIcRwJNa-0G3Ma4Qb5FHEYGEZJVTTTxdRMNfyyo616cVasCY7iUdHwwE-KKV2eIyL5gaCZZB3HPVCJhgEyF164kYMrDI4DSYveKtt5aYmqIemAQZnL5lmknPzzBgc7gPNZAF7DXn4Cz9N8iFIIxsCn4QILS5WMC6Lfwoow1Lr3gbpugFrkZ3Aftq_jxr280SC-dks4yaCn2qOD_GTj2VbH44GVxHmWVhcMLrDEgg08PgYsTyz10O5g6jqMbRmQQnh4taBCGetfQj85YRBe-qUYSkNI31G6iq7DZXAF74s8Y3wBcP0drXkl_L8wOUK1Jqlr3BPdC9YSabhyH32IBggg177oqETwEO2sBYnFf2Ydm4ZTo8ed2bKViDJ4EFiw7SO6QRfNuLDngbZqE62ELZQ2E77CvJG5BnqyocCaubEKlgbbW2SJE7vQWI8SJirwctrRvkXOOX6Z-UUt9FRmNIKZ_eMxjJMQMHYT5zCotUfC6_x_CVsjVsMuIFVEj_Bb90Qj-POkv6DzP8-GotoikA9GvU7JEbu8hSj-02hyweIvy6DzePpvlx1Df_1LUk7eSnfuiTmtHXzfjZQ4p6_NJUYDikk9A1M_uDNuaR7jbU_dR3Xp_qS6OLaD8kCq9r8MnAvCP70jIstPvk'
+###env
+
+# -------------- User --------------
+
+get(url + version + '/version_check',
+	headers={'Content-Type': 'application/json', 'X-Requested-With': 'XMLHttpRequest'
+	})
+post(url + version + '/auth/signup',
+	headers={'Content-Type': 'application/json', 'X-Requested-With': 'XMLHttpRequest'},
+ 	json={'name': 'mili', 'phone': '09015518439', 'password': '12345', 'studentNumber': '93113321017', 'major':'narm afzar', 'nationCode': '2580859721', 'guest': '0'})
+post(url + version + '/auth/login',
+	headers={'Content-Type': 'application/json', 'X-Requested-With': 'XMLHttpRequest'},
+	# admin student number = '1' , password = '12345'
+	json={'studentNumber': '93113321017', 'password': '12345'})
+get(url + version + '/auth/user',
+	headers={'Content-Type': 'application/json', 'X-Requested-With': 'XMLHttpRequest',
+	'Authorization': 'Bearer ' + accessToken})
+get(url + version + '/auth/logout',
+	headers={'Content-Type': 'application/json', 'X-Requested-With': 'XMLHttpRequest',
+	'Authorization': 'Bearer ' + accessToken})
+get(url + version + '/auth/get_notification',
+	headers={'Content-Type': 'application/json', 'X-Requested-With': 'XMLHttpRequest',
+	'Authorization': 'Bearer ' + accessToken})
+get(url + version + '/auth/get_news',
+	headers={'Content-Type': 'application/json', 'X-Requested-With': 'XMLHttpRequest',
+	'Authorization': 'Bearer ' + accessToken})
+get(url + version + '/auth/get_classes',
+	headers={'Content-Type': 'application/json', 'X-Requested-With': 'XMLHttpRequest',
+	'Authorization': 'Bearer ' + accessToken})
+get(url + version + '/auth/get_chat_history',
+	headers={'Content-Type': 'application/json', 'X-Requested-With': 'XMLHttpRequest',
+	'Authorization': 'Bearer ' + accessToken})
+post(url + version + '/auth/send_message',
+	headers={'Content-Type': 'application/json', 'X-Requested-With': 'XMLHttpRequest', 'Authorization': 'Bearer ' + accessToken},
+	json={'chatRoomId': '1', 'text': 'bye bye'})
+
+post(url + version + '/auth/login',
+	headers={'Content-Type': 'application/json', 'X-Requested-With': 'XMLHttpRequest'},
+	# admin student number = '1' , password = '12345'
+	json={'studentNumber': '93113321017', 'password': '12345'})
